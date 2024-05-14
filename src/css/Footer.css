@@ -1,7 +1,26 @@
 footer {
-    font-size: 11px; text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span {
+    margin-right: 5px;
 }
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        height: 50px;
+        font-size: 16px;
+        flex-direction: column;
+        padding: 5px 0;
+    }
 }
