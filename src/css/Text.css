@@ -1,3 +1,17 @@
-p {
-    margin-left: 30px;
+section.text {
+    width: 450px;
+    margin-left: 125px;
+}
+
+section.text h1 {
+    color: var(--very-dark-desaturated-violet);
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+section.text p {
+    color: var(--dark-grayish-violet);
+    font-weight: 400;
+    line-height: 28px;
 }

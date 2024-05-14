@@ -19,7 +19,7 @@
     /* secondary */
     --white: hsl(0, 0%, 100%);
     --light-grayish-violet: hsl(270, 20%, 96%);
-    --very-dark-desaturated-violet:: hsl(271, 36%, 24%);
+    /* --very-dark-desaturated-violet:: hsl(271, 36%, 24%); */
     --very-light-magenta: hsl(289, 100%, 72%);
 }
 
@@ -31,10 +31,11 @@ body {
     font-style: normal;
 }
 
-.app {
+main.app {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fafafa;
 }
