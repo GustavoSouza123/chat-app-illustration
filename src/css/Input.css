@@ -1,0 +1,34 @@
+.input {
+    width: 210px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.input .placeholder {
+    width: calc(100% - 24px);
+    height: 100%;
+    font-size: 10px;
+    color: var(--grayish-blue);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.input .send-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--very-dark-desaturated-violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input .send-btn img {
+    width: 10px;
+    height: 10px;
+}

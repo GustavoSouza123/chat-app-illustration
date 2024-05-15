@@ -1,0 +1,23 @@
+.message {
+
+}
+
+.message[type="text"] {
+
+}
+
+.message[type="image"] {
+
+}
+
+.message[type="option"] {
+    
+}
+
+.message[sent="true"] {
+    background: red;
+}
+
+.message[sent="false"] {
+    background: blue;
+}
