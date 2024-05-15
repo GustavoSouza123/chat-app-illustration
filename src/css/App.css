@@ -6,6 +6,7 @@
 
 :root {
     /* primary */
+    --background: #fafafa;
     /* text */
     --pale-violet: hsl(276, 100%, 81%);
     --moderate-violet: hsl(276, 55%, 52%);
@@ -18,7 +19,7 @@
     --light-violet: hsl(264, 100%, 61%);
     /* secondary */
     --white: hsl(0, 0%, 100%);
-    --light-grayish-violet: hsl(270, 20%, 96%);
+    --light-grayish-violet: hsl(264, 33%, 97%);
     /* --very-dark-desaturated-violet:: hsl(271, 36%, 24%); */
     --very-light-magenta: hsl(289, 100%, 72%);
 }
@@ -29,6 +30,7 @@ body {
     font-weight: 400;
     font-optical-sizing: auto;
     font-style: normal;
+    overflow: hidden;
 }
 
 main.app {
@@ -37,5 +39,27 @@ main.app {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: var(--background);
+    padding-left: 100px;
+}
+
+main.app .strip {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+}
+
+main.app .strip.left {
+    top: 0;
+    left: -80px;
+    border-radius: 0 0 250px 250px;
+    background: var(--light-violet);
+    background: linear-gradient(180deg, var(--light-magenta) 1%, var(--light-violet) 100%);
+}
+
+main.app .strip.right {
+    bottom: -30px;
+    right: -175px;
+    border-radius: 250px 250px 0 0;
+    background: var(--light-grayish-violet);
 }

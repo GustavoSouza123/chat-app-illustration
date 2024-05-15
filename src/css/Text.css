@@ -1,4 +1,6 @@
 section.text {
+    position: relative;
+    z-index: 999;
     width: 450px;
     margin-left: 125px;
 }

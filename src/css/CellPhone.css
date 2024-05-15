@@ -1,4 +1,6 @@
 section.phone {
+    position: relative;
+    z-index: 999;
     width: 247px;
     height: 505px;
     border-radius: 30px;
@@ -20,8 +22,8 @@ section.phone .screen .top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(136,56,255);
-    background: linear-gradient(90deg, rgba(136,56,255,1) 20%, rgba(233,66,255,1) 100%);
+    background: var(--light-violet);
+    background: linear-gradient(90deg, var(--light-violet) 20%, var(--light-magenta) 100%);
 }
 
 section.phone .screen .top .screen-space {
