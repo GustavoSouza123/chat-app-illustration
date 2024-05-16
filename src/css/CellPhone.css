@@ -6,6 +6,7 @@ section.phone {
     border-radius: 30px;
     background-color: var(--white);
     padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 35px 70px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
 }
 
 section.phone .screen {
@@ -72,11 +73,12 @@ section.phone .screen .top .info .chat-photo img {
 }
 
 section.phone .screen .top .info .chat-info {
-    width: 100%;
+    min-width: 70px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
     color: var(--white);
 }
 
