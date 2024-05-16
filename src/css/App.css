@@ -21,7 +21,8 @@
     --white: hsl(0, 0%, 100%);
     --light-grayish-violet: hsl(264, 33%, 97%);
     /* --very-dark-desaturated-violet:: hsl(271, 36%, 24%); */
-    --very-light-magenta: hsl(289, 100%, 72%);
+    --very-light-magenta: rgb(237, 124, 252);
+    --left-chat: rgb(237, 229, 244);
 }
 
 body {

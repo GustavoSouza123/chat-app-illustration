@@ -1,28 +1,36 @@
 .row {
-    position: relative;
+    display: flex;
     width: 100%;
     min-height: 35px;
-    /* background: red; */
     margin-bottom: 8px;
 }
 
-.message:not([type="image"]) {
-    position: absolute;
-    width: 130px;
-    min-height: 100%;
-    background-color: var(--pale-violet);
-    color: var(--moderate-violet);
-    font-size: 10px;
+.row[sent="true"] {
+    justify-content: flex-end;
+}
+
+.message {
+    font-size: 8px;
+    border-radius: 10px;
+    color: var(--pale-violet);
 }
 
 .message[type="text"] {
-    
+    position: absolute;
+    max-width: 130px;
+    min-height: 23px;
+    background-color: var(--left-chat);
+    color: var(--moderate-violet);
+    padding: 7px 8px;
+    border-bottom-left-radius: 5px;
 }
 
 .message[type="text"][sent="true"] {
-    background-color: var(--pale-violet);
+    background-color: var(--white);
     color: var(--desaturated-dark-violet);
-    right: 0;
+    box-shadow: 0px 30px 30px -15px rgba(221,221,221,1); /* not working? */
+    border-radius: 10px;
+    border-bottom-right-radius: 5px;
 }
 
 .photos {
@@ -30,7 +38,6 @@
     height: 40px;
     display: flex;
     gap: 8px;
-    /* background: red; */
     margin-bottom: 8px;
 }
 
@@ -41,10 +48,41 @@
 .message[type="image"] {
     width: 40px;
     height: 40px;
-    background: black;
 }
 
+.message[type="image"] img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
 .message[type="option"] {
-    
+    width: 160px;
+    height: 32px;
+    background: var(--light-violet);
+    background: linear-gradient(90deg, var(--light-magenta) 20%, var(--light-violet) 100%);
+    padding: 10px 16px 10px 8px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.message[type="option"] .radio-input {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--very-light-magenta);
+    margin-right: 10px;
+}
+
+.message[type="option"] .text {
+    color: var(--light-grayish-violet);
+    flex-grow: 1;
+}
+
+.message[type="option"] .price {
+    color: var(--light-grayish-violet);
+    font-size: 12px;
+    font-weight: 600;
 }

@@ -30,18 +30,18 @@ function CellPhone() {
                 </div>
                 <div className="chat">
                     <div className="content">
-                        <Message text="esta é a minha primeira mensagem" sent="false" />
-                        <Message text="e esta é outra mensagem aqui" sent="false" />
+                        <Message text="That sounds great. I'd be happy with that." sent="false" />
+                        <Message text="Could you send over some pictures of your dog, please?" sent="false" />
                         <div className="photos" sent="true">
-                            <Message type="image" />
-                            <Message type="image" />
-                            <Message type="image" />
+                            <Message type="image" src="./src/assets/dog-image-1.jpg" />
+                            <Message type="image" src="./src/assets/dog-image-2.jpg" />
+                            <Message type="image" src="./src/assets/dog-image-3.jpg" />
                         </div>
-                        <Message text="Here are a few pictures. She's a happy girl" />
-                        <Message text="Can you make it?" />
-                        <Message text="She looks so happy! The time we discussed works. How long shall I take her out for?" sent="false" />
-                        {/*<Message type="option" sent="false" />
-                        <Message type="option" sent="false" /> */}
+                        <Message text="Here are a few pictures. She's a happy girl!" />
+                        <Message text="Can you make it?" style={{'margin-bottom': '0'}} />
+                        <Message text="She looks so happy! The time we discussed works. How long shall I take her out for?" sent="false" style={{'margin-bottom': '16px'}} />
+                        <Message type="option" sent="false" text="30 minute walk" price="29" />
+                        <Message type="option" sent="false" text="1 hour walk" price="49" />
                     </div>
                     <Input />
                 </div>
