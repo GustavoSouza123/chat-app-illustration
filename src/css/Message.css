@@ -1,23 +1,50 @@
-.message {
+.row {
+    position: relative;
+    width: 100%;
+    min-height: 35px;
+    /* background: red; */
+    margin-bottom: 8px;
+}
 
+.message:not([type="image"]) {
+    position: absolute;
+    width: 130px;
+    min-height: 100%;
+    background-color: var(--pale-violet);
+    color: var(--moderate-violet);
+    font-size: 10px;
 }
 
 .message[type="text"] {
-
-}
-
-.message[type="image"] {
-
-}
-
-.message[type="option"] {
     
 }
 
-.message[sent="true"] {
-    background: red;
+.message[type="text"][sent="true"] {
+    background-color: var(--pale-violet);
+    color: var(--desaturated-dark-violet);
+    right: 0;
 }
 
-.message[sent="false"] {
-    background: blue;
+.photos {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 8px;
+    /* background: red; */
+    margin-bottom: 8px;
+}
+
+.photos[sent="true"] {
+    justify-content: flex-end;
+}
+
+.message[type="image"] {
+    width: 40px;
+    height: 40px;
+    background: black;
+}
+
+
+.message[type="option"] {
+    
 }

@@ -30,18 +30,18 @@ function CellPhone() {
                 </div>
                 <div className="chat">
                     <div className="content">
-                        <Message text="" sent="false" />
-                        <Message text="" sent="false" />
-                        <div className="photos">
+                        <Message text="esta é a minha primeira mensagem" sent="false" />
+                        <Message text="e esta é outra mensagem aqui" sent="false" />
+                        <div className="photos" sent="true">
                             <Message type="image" />
                             <Message type="image" />
                             <Message type="image" />
                         </div>
-                        <Message text="" />
-                        <Message text="" />
-                        <Message text="" sent="false" />
-                        <Message type="option" sent="false" />
-                        <Message type="option" sent="false" />
+                        <Message text="Here are a few pictures. She's a happy girl" />
+                        <Message text="Can you make it?" />
+                        <Message text="She looks so happy! The time we discussed works. How long shall I take her out for?" sent="false" />
+                        {/*<Message type="option" sent="false" />
+                        <Message type="option" sent="false" /> */}
                     </div>
                     <Input />
                 </div>

@@ -94,7 +94,7 @@ section.phone .screen .top .info .chat-info .status {
 }
 
 section.phone .screen .top .info .settings-btn {
-    width: 16px;
+    width: 12px;
     height: 12px;
     display: flex;
     align-items: center;
@@ -111,11 +111,14 @@ section.phone .screen .chat {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 8px;
+    padding: 12px 8px;
 }
 
 section.phone .screen .chat .content {
     width: 100%;
     height: 100%;
     padding-bottom: 16px;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
 }
