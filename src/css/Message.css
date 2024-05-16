@@ -23,12 +23,13 @@
     color: var(--moderate-violet);
     padding: 7px 8px;
     border-bottom-left-radius: 5px;
+    line-height: 10px;
 }
 
 .message[type="text"][sent="true"] {
     background-color: var(--white);
     color: var(--desaturated-dark-violet);
-    box-shadow: 0px 30px 30px -15px rgba(221,221,221,1); /* not working? */
+    box-shadow: 0px 10px 20px -10px #ddd;;
     border-radius: 10px;
     border-bottom-right-radius: 5px;
 }

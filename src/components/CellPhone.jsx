@@ -38,8 +38,8 @@ function CellPhone() {
                             <Message type="image" src="./src/assets/dog-image-3.jpg" />
                         </div>
                         <Message text="Here are a few pictures. She's a happy girl!" />
-                        <Message text="Can you make it?" style={{'margin-bottom': '0'}} />
-                        <Message text="She looks so happy! The time we discussed works. How long shall I take her out for?" sent="false" style={{'margin-bottom': '16px'}} />
+                        <Message text="Can you make it?" style={{'marginBottom': '0'}} />
+                        <Message text="She looks so happy! The time we discussed works. How long shall I take her out for?" sent="false" style={{'marginBottom': '16px'}} />
                         <Message type="option" sent="false" text="30 minute walk" price="29" />
                         <Message type="option" sent="false" text="1 hour walk" price="49" />
                     </div>
