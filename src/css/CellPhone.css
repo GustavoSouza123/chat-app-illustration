@@ -28,6 +28,7 @@ section.phone .screen .top {
 }
 
 section.phone .screen .top .screen-space {
+    position: relative;
     width: 129px;
     height: 18px;
     background-color: var(--white);
@@ -120,4 +121,14 @@ section.phone .screen .chat .content {
     /* background: blue; */
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 350px) {
+    section.phone {
+        scale: .9;
+    }
+
+    section.phone .screen .top .screen-space {
+        bottom: 3px;
+    }
 }

@@ -1,7 +1,7 @@
 section.text {
     position: relative;
     z-index: 999;
-    width: 450px;
+    max-width: 450px;
     margin-left: 125px;
 }
 
@@ -16,4 +16,24 @@ section.text p {
     color: var(--dark-grayish-violet);
     font-weight: 400;
     line-height: 28px;
+}
+
+@media only screen and (max-width: 850px) {
+    section.text {
+        text-align: center;
+        margin: 0;
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section.text h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    section.text {
+        margin-top: 30px;
+    }
 }
