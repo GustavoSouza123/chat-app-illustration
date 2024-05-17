@@ -5,6 +5,9 @@ import "../css/CellPhone.css";
 import arrowleft from "../assets/arrow-left.svg";
 import avatar from "../assets/avatar.jpg";
 import settings from "../assets/three-dots.svg";
+import dog1 from "../assets/dog-image-1.jpg";
+import dog2 from "../assets/dog-image-2.jpg";
+import dog3 from "../assets/dog-image-3.jpg";
 
 function CellPhone() {
     return (
@@ -33,9 +36,9 @@ function CellPhone() {
                         <Message text="That sounds great. I'd be happy with that." sent="false" />
                         <Message text="Could you send over some pictures of your dog, please?" sent="false" />
                         <div className="photos" sent="true">
-                            <Message type="image" src="./src/assets/dog-image-1.jpg" />
-                            <Message type="image" src="./src/assets/dog-image-2.jpg" />
-                            <Message type="image" src="./src/assets/dog-image-3.jpg" />
+                            <Message type="image" src={dog1} />
+                            <Message type="image" src={dog2} />
+                            <Message type="image" src={dog3} />
                         </div>
                         <Message text="Here are a few pictures. She's a happy girl!" />
                         <Message text="Can you make it?" style={{'marginBottom': '0'}} />
