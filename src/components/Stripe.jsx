@@ -1,10 +1,10 @@
 import React from "react";
 import "../css/Stripe.css";
 
-function Strip({ id }) {
+function Stripe({ id }) {
     return (
-        <div className="strip" id={id}></div>
+        <div className="stripe" id={id}></div>
     );
 }
 
-export default Strip;
+export default Stripe;
