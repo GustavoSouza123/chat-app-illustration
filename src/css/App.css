@@ -50,12 +50,12 @@ main.app::after {
     content: '';
     position: fixed;
     width: 500px;
+    height: 1000px;
 }
 
 main.app::before {
-    height: 750px;
     z-index: 99;
-    top: -50px;
+    top: -300px;
     left: -80px;
     border-radius: 0 0 250px 250px;
     background: var(--light-violet);
@@ -63,7 +63,6 @@ main.app::before {
 }
 
 main.app::after {
-    height: 1000px;
     z-index: 9;
     top: 120px;
     right: -170px;
@@ -82,12 +81,12 @@ main.app::after {
 
 @media only screen and (max-width: 700px) {
     main.app::before {
-        top: -230px;
+        top: -500px;
         left: -300px;
     }
     
     main.app::after {
-        top: 420px;
+        top: 450px;
         right: -300px;
     }
 }
