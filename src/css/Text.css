@@ -18,15 +18,15 @@ section.text p {
     line-height: 28px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     section.text {
         text-align: center;
         margin: 0;
-        margin-top: 70px;
+        margin-top: 40px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
     section.text h1 {
         font-size: 32px;
     }
@@ -34,6 +34,10 @@ section.text p {
 
 @media only screen and (max-width: 350px) {
     section.text {
-        margin-top: 30px;
+        margin-top: 0px;
+    }
+
+    section.text h1 {
+        font-size: 28px;
     }
 }

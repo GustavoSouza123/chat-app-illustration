@@ -46,10 +46,49 @@ main.app {
     padding-bottom: 40px;
 }
 
-@media only screen and (max-width: 850px) {
+main.app::before,
+main.app::after {
+    content: '';
+    position: fixed;
+    width: 500px;
+}
+
+main.app::before {
+    height: 750px;
+    z-index: 99;
+    top: 0;
+    left: -80px;
+    border-radius: 0 0 250px 250px;
+    background: var(--light-violet);
+    background: linear-gradient(180deg, var(--light-magenta) 1%, var(--light-violet) 100%);
+}
+
+main.app::after {
+    height: 1000px;
+    z-index: 9;
+    top: 120px;
+    right: -120px;
+    border-radius: 250px 250px 0 0;
+    background: var(--light-grayish-violet);
+}
+
+@media only screen and (max-width: 900px) {
     main.app {
         flex-direction: column;
         padding: 0 35px;
         padding-bottom: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    main.app::before {
+        top: -210px;
+        left: -300px;
+    }
+    
+    main.app::after {
+        bottom: -160px;
+        right: -300px;
     }
 }

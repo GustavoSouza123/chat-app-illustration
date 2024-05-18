@@ -29,6 +29,7 @@ section.phone .screen .top {
 
 section.phone .screen .top .screen-space {
     position: relative;
+    bottom: 2px;
     width: 129px;
     height: 18px;
     background-color: var(--white);
